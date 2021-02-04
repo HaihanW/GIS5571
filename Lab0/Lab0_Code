@@ -1,0 +1,6 @@
+
+import arcpy
+
+arcpy.analysis.Buffer("TransitShelters", r"D:\5572labs\Lab0\MyProject1\MyProject1.gdb\TransitShelters_Buffer1", "100 Meters", "FULL", "ROUND", "NONE", None, "PLANAR")
+arcpy.analysis.GraphicBuffer("AgriculturalPreserves2019", r"D:\5572labs\Lab0\MyProject1\MyProject1.gdb\AgriculturalPreserves2019_Gr", "100 Meters", "SQUARE", "MITER", 10, "0 Meters")
+arcpy.analysis.GraphicBuffer("dnr_wildlife_management_area_boundaries_publicly_accessible", r"D:\5572labs\Lab0\MyProject1\MyProject1.gdb\dnr_wildlife_management_area", "500 Meters", "SQUARE", "MITER", 10, "0 Meters")
